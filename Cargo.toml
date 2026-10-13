@@ -1,0 +1,16 @@
+[package]
+name = "evidence_delta_engine"
+version = "0.1.0"
+edition = "2021"
+description = "Evidence Delta Engine - Learn phase of the Unified Adaptive Engine"
+license = "Proprietary"
+
+[features]
+default = ["backend-interp"]
+backend-interp = []
+test-hooks = []
+
+[dependencies]
+serde = { version = "=1.0.210", features = ["derive"] }
+serde_json = "=1.0.128"
+thiserror = "=1.0.64"
